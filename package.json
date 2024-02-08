@@ -1,0 +1,10 @@
+{
+  "name": "jshtmleditors",
+  "version": "1.0.0",
+  "description": "JavaScript HTML Editors Test Page",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "froala-editor": "^4.1.4"
+  }
+}
