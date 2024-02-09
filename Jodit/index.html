@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0"/>
+    <title>Jodit</title>
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/jodit@4.0.6/es2021/jodit.min.css"
+    />
+    <script src="https://unpkg.com/jodit@4.0.6/es2021/jodit.min.js"></script>
+</head>
+<body>
+<style>
+    .container {
+        width: 1000px;
+        margin: 20px auto;
+    }
+
+</style>
+<h3>
+    <a href="https://xdsoft.net/jodit" target="_blank">
+        Jodit
+    </a>
+</h3>
+<div class="container">
+    <textarea id="editor"></textarea>
+    <script>
+        const editor = Jodit.make('#editor',
+            {
+                "askBeforePasteFromWord": false,
+                "disablePlugins": "file,image,video,xpath,class-span,about,paste-storage"
+            });
+    </script>
+</div>
+</body>
+</html>
+
