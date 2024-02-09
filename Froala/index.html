@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0"/>
+    <title>Froala</title>
+    <link href="froala_editor.pkgd.min.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<style>
+    .container {
+        width: 1000px;
+        margin: 20px auto;
+    }
+
+    .show-placeholder, .e-content {
+        min-height: 200px !important;
+    }
+</style>
+<h3>
+    <a href="https://froala.com" target="_blank">
+        Froala
+    </a>
+</h3>
+<div class="container">
+    <div id="froala"></div>
+    <script type="text/javascript" src="froala_editor.pkgd.min.js"></script>
+</div>
+<script>
+    var editor = new FroalaEditor('#froala', {
+        toolbarButtons: [
+            'fullscreen', 'print', 'undo', 'redo', '|',
+            'bold', 'italic', 'underline', 'subscript', 'superscript', '|'
+            , 'fontFamily', 'fontSize', 'paragraphFormat', 'textColor', 'backgroundColor', 'clearFormatting', '|',
+            'alignLeft', 'alignCenter', 'alignRight', 'alignJustify', '|', 'formatOL', 'formatUL',
+            'outdent', 'indent', 'lineHeight',
+            '|', 'insertLink', 'insertTable', 'specialCharacters', 'insertHR',
+            '|', 'html'
+        ],
+        wordPasteModal: false,
+        wordPasteKeepFormatting: true
+    });
+</script>
+</body>
+</html>

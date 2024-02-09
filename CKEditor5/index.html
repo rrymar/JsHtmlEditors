@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0"/>
+    <title>CKEditor 5</title>
+</head>
+<body>
+<style>
+    .container {
+        width: 1000px;
+        margin: 20px auto;
+    }
+    
+    .ck-editor__editable[role="textbox"] {
+        /* Editing area */
+        min-height: 200px;
+    }
+
+    .ck-content .image {
+        /* Block images */
+        max-width: 80%;
+        margin: 20px auto;
+    }
+</style>
+<h3>
+    <a href="https://ckeditor.com" target="_blank">
+        CKEditor 5
+    </a>
+</h3>
+<div class="container">
+    <div id="editor">
+    </div>
+</div>
+<script src="https://cdn.ckeditor.com/ckeditor5/41.1.0/super-build/ckeditor.js"></script>
+<script src="ckeditor5.js"></script>
+</body>
+</html>
