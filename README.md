@@ -9,6 +9,7 @@
 | [Jodit](https://xdsoft.net/jodit)                                                                      | 799$ /year for Unlimited use             | 330kb | Private Person        | Unclear   |
 | [Syncfusion Rich Text Editor](https://ej2.syncfusion.com/demos/#/material/rich-text-editor/tools.html) | 4740$ per Developer per year             | 5.3mb | Syncfusion            | USA, NC   |
 | [Kendo UI Editor](https://www.telerik.com/kendo-react-ui/components/editor/)                           | 1149$ per Developer per year (renew 50%) | 1.5mb | Telerik               | Worldwide |
+| [TinyMCE](https://www.tiny.cloud/)                                                                     | Quote?                                   | 1mb   | Tiny                  | Australia |
 
 
 Required features 

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0"/>
+    <title>TiniMCE</title>
+    <script src="https://cdn.tiny.cloud/1/jrpiwnb6brz2vnszi2hk1bzpqzdegw1ibsm7jzb4gq1ov9lt/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+</head>
+<body>
+<style>
+    .container {
+        width: 1000px;
+        margin: 20px auto;
+    }
+
+</style>
+<h3>
+    <a href="https://www.tiny.cloud/" target="_blank">
+        TinyMCE
+    </a>
+</h3>
+<div>Menu items can be moved into toolbar and menu can be removed</div>
+<div class="container">
+    <textarea id="editor"></textarea>
+    <script>
+        tinymce.init({
+            selector: 'textarea',  // change this value according to your HTML
+            plugins: 'preview powerpaste casechange searchreplace autolink autosave save directionality advcode visualblocks visualchars fullscreen link table charmap pagebreak nonbreaking anchor tableofcontents insertdatetime advlist lists checklist wordcount tinymcespellchecker formatpainter permanentpen charmap quickbars linkchecker emoticons advtable export footnotes mergetags autocorrect typography advtemplate', 
+            //menubar: false,
+            menubar: 'file edit view insert format tools table tc help',
+            toolbar: "undo redo | aidialog aishortcuts | blocks fontsizeinput | bold italic | align numlist bullist | link image | table media pageembed | lineheight  outdent indent | strikethrough forecolor backcolor formatpainter removeformat | charmap emoticons checklist | code fullscreen preview | save print export | pagebreak anchor codesample footnotes mergetags | addtemplate inserttemplate | addcomment showcomments | ltr rtl casechange | spellcheckdialog a11ycheck", // Note: if a toolbar item requires a plugin, the item will not present in the toolbar if the plugin is not also loaded.
+        });
+    </script>
+</div>
+</body>
+</html>
+
